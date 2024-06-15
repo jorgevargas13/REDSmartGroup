@@ -11,7 +11,7 @@ import { PreguntasT2_1, PreguntasT3_2, PreguntasT1_3, PreguntasT2_2 } from './Ni
 import Record from './Record/record';
 
 function App() {
-  const URLS = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000/api/";
+  const URLS = `${process.env.REACT_APP_BACKEND_URL}/api/` || "http://localhost:65090/api/";
   const [tema, CambioTema] = useState(true);
   const [contenedor, setContenedor] = useState("Contenedor-Login")
   const [logeado, setLogeado] = useState(false);

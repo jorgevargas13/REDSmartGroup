@@ -40,7 +40,7 @@ export const GlobalContext = createContext({
     modulo3: {SubTema1: false, SubTema2: false, SubTema3: false, guardado: false},
   },
   setTerminado: () => {},
-  URLS: 'http://localhost:5000/api/'
+  URLS: `${process.env.REACT_APP_BACKEND_URL}/api/`
 });
 
 export const GlobalPermitido = ({children, contenedor, setContenedor, tema, setTema, ruta, setRuta, logeado, setLogeado, rutaTema1, setRutaTema1, rutaTema2, setRutaTema2, rutaTema3, setRutaTema3, puntaje, setPuntaje, preguntasAletorias, setPreguntasAleatorias, identificacion, setIdentificacion, nombre, setNombre, terminado, setTerminado, URLS}) => {
